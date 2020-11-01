@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!--metas-->
     <meta charset="UTF-8">
     <meta name="description" content="proyecto creado para el curso de desarrollo web">
     <meta name="author" content="Kary Ruiz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--links-->
+    <link rel="shortcut icon" href="./assets/icons/panda.svg" type="image/x-icon">
     <title>Karen Ruiz</title>
 </head>
 <body>
     <!--header-->
     <header>
+        <div class="header__figure--logo">
+            <figure>
+                <img src="./assets/icons/panda.svg" alt="logo 2020">
+            </figure>
+        </div>
         <nav class="header__nav">
             <ul class="header__nav--list">
                 <li><a href="#">Portafolio</a></li>
@@ -57,13 +65,31 @@
         </section>
         <!--contacto-->
         <section class="main__section--contacto">
-            
+            <div class="section--contacto-form">
+                <h3>Creamos algo juntos</h3>
+                <form action="#">
+                    <span>i</span>
+                    <label for="user-email">
+                        <input type="email" name="user-email" id="email" placeholder="dejáme tu correo">
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="section--contacto-social">
+                <span class="social-gh">i</span>
+                <span class="social-fb">i</span>
+                <span class="social-tw">i</span>
+            </div>
         </section>
     </main>
     <!--/..-->
 
     <!--footer-->
-    <footer></footer>
+    <footer>
+        <p>Curso de desarrollo web 2020 - Platzi</p>
+        <p>Hecho con ❤</p>
+        <p>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+    </footer>
     <!--../-->
 </body>
 </html>
