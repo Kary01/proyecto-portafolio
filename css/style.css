@@ -1,3 +1,16 @@
+:root{
+    /*colors*/
+    --primary-color: #333333;
+    --secundary-color: #242424;
+    --soft-gray: #D9D9D9;
+    --dark-gray: #775577;
+    --just-white: #ffffff;
+    --just-black: #000000;
+    /*fonts*/
+    --primary-font: 'Lato', sans-serif;
+    --secundary-font: 'Rubik', sans-serif; 
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,4 +19,54 @@
 
 html{
     font-size: 62.5%;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.header__nav--list a{
+    color: var(--just-white);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--secundary-font);
+    font-weight: 700;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.main__section--banner{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+    background-image: url('../assets/images/banner-l.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main__section--banner .section--banner-background{
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .main__section--banner h1{
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: -.2rem;
+    text-transform: capitalize;
+    color: var(--just-white);
+}
+
+.section--portafolio-card .portafolio-card-details{
+    width: 50%;
 }
