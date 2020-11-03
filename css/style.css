@@ -243,6 +243,108 @@ main .main__section--banner h1{
     border-radius: 4px;
 }
 
+.main__section--contacto{
+    width: 100%;
+    height: 240px;
+    padding: 3em;
+}
+
+.section--contacto-title{
+    display: flex;
+    align-items: center;
+    margin: 1em 0 1.5em 0;
+    font-family: var(--secundary-font);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--secundary-color);
+}
+
+.main__section--contacto .contacto-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+    background-color: var(--just-white);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.section--contacto-form{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 2em;
+    gap: 50px
+}
+
+.section--contacto-form .contacto-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100px;
+    background-color: var(--just-white);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.contacto-social .social-gh{
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/icons/github.svg');
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.contacto-social .social{
+    width: 60px;
+    height: 60px;
+    margin-right: 2em;
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.icon-gh{
+    background-image: url('../assets/icons/github.svg');
+}
+
+.icon-fb{
+    background-image: url('../assets/icons/facebook.svg');
+}
+
+.icon-tw{
+    background-image: url('../assets/icons/twitter.svg');
+}
+
+.contacto-form .contacto-icon{
+    width: 40px;
+    height: 43px;
+    background-image: url('../assets/icons/email.ico');
+    background-position: center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.contacto-form input{
+    width: 250px;
+    height: 33px;
+    margin: 0 1em 0;
+}
+
+.contacto-form button{
+    width: 100px;
+    height: 33px;
+    font-weight: 700;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--just-white);
+    border-radius: 4px;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
