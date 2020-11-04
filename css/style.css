@@ -113,6 +113,7 @@ main .main__section--banner{
     padding: 2em;
     max-width: 900px;
     min-width: 300px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -194,49 +195,45 @@ main .main__section--banner{
     padding: 2em;
     min-width: 300px;
     max-width: 900px;
+    height: auto;
     margin: 0 auto;
 }
 
-/*.section--experience-contain{
+.section--experience-contain{
     display: flex;
-    justify-content: center;
-    margin: 0 2em;
+    flex-direction: column;
+    width: 90%;
+    min-width: 288px;
+    max-width: 500px;
+    margin: 0 auto;
     gap: 50px;
-}
-
-.main__section--experience .section--experience-title{
-    display: flex;
-    align-items: center;
-    margin: 1em 0 1.5em 0;
-    font-family: var(--secundary-font);
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: var(--secundary-color);
 }
 
 .section--experience-card{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    min-height: 400px;
+    width: 100%;
+    min-height: 200px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
 
 .experience--card-imagen{
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-image: url('../assets/images/banner-s.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .experience--card-detail{
     position: absolute;
     width: 90%;
-    height: 200px;
-    top: calc(50% - 80px);
+    height: 150px;
+    top: calc(50% - 30px);
     left: calc(5%);
     padding: 2em;
+    text-align: center;
     background-color: var(--just-white);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -244,7 +241,7 @@ main .main__section--banner{
 
 .experience--card-detail .experience--card-title{
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 1rem;
     margin-bottom: 1em;
     text-align: left;
 }
@@ -272,7 +269,7 @@ main .main__section--banner{
     padding: 3em;
 }
 
-.section--contacto-title{
+/*.section--contacto-title{
     display: flex;
     align-items: center;
     margin: 1em 0 1.5em 0;
