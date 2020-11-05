@@ -379,4 +379,21 @@ footer a{
 }
 
 /* media queries */
-@media screen and ()
+@media screen and (min-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .header__nav .header__nav--list{
+        flex-direction: row;
+    }
+
+    header .header__nav--list li{
+        margin-right: 1em;
+    }
+
+    .main__section--contacto .section--contacto-form .contacto-form{
+        flex-direction: row;
+    }
+}
