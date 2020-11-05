@@ -396,4 +396,28 @@ footer a{
     .main__section--contacto .section--contacto-form .contacto-form{
         flex-direction: row;
     }
+
+    .section--portafolio-card{
+        flex-direction: row;
+    }
+
+    .portafolio--card--image .portafolio-card-details{
+        width: 50%;
+    }
+
+    .main__section--experience{
+        min-height: 300px;
+    }
+
+    .section--experience-contain{
+        flex-direction: row;
+        width: 90%;
+        max-width: 700px;
+        gap: 50px;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
