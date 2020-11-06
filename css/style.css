@@ -95,10 +95,24 @@ header .header__nav .header__nav--list{
     display: flex;
     flex-direction: column;
     list-style: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 7em;
+    transition: .3s;
+}
+
+/*burguer menu*/
+header .header__nav .header__nav--list.is-active{
+    left: 0;
 }
 
 header .header__nav--list li{
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 1.6rem;
     margin-top: 2em;
@@ -434,7 +448,7 @@ footer a{
     header .header__nav--list li{
         margin-right: 1em;
     }
-
+    
     .main__section--contacto .section--contacto-form .contacto-form{
         flex-direction: row;
     }
