@@ -55,7 +55,7 @@ html{
     content: "\e9bd";
   }
   
-  .burguer-button{
+  .burger-button{
       width: 40px;
       height: 40px;
       font-size: 2rem;
@@ -91,13 +91,13 @@ header .header__figure--logo{
     background-size: cover;
 }
 
-header .header__nav .header__nav--list{
+header .header__nav{
     display: flex;
     flex-direction: column;
     list-style: none;
     position: fixed;
     background-color: rgba(0,0,0,.8);
-    z-index: 3;
+    z-index: 1;
     top: 0;
     left: -100vw;
     bottom: 0;
@@ -106,8 +106,8 @@ header .header__nav .header__nav--list{
     transition: .3s;
 }
 
-/*burguer menu*/
-header .header__nav .header__nav--list.is-active{
+/*burger menu*/
+header .header__nav.is-active{
     left: 0;
 }
 
@@ -477,7 +477,7 @@ footer a{
         justify-content: space-between;
     }
 
-    .burguer-button{
+    .burger-button{
         display: none;
     }
 }
