@@ -121,11 +121,23 @@
 
     <!-- script-->
     <script>
+
+        const ipad = window.matchMedia('screen and (max-width: 768px)');
         const menu = document.querySelector('.header__nav');
         const burgerButton = document.querySelector('#burger-menu');
 
-        burgerButton.addEventListener('click', hideShow);
+        ipad.addListener(validation);
+        function validation(event){
+            if(event.matches){
+               // console.log('true');
+                burgerButton.addEventListener('click', hideShow);
+            }else{
+               // console.log('false');
+                burgerButton.removeEventListener('click', hideShow);
+            }
+        }
 
+        //función para mostrar u ocultar el burger menu
         function hideShow(){
             if(menu.classList.contains('is-active')){
                 menu.classList.remove('is-active');
