@@ -126,7 +126,9 @@
         const menu = document.querySelector('.header__nav');
         const burgerButton = document.querySelector('#burger-menu');
 
+        //función para desactivar o activar el evento con media queries
         ipad.addListener(validation);
+        validation(ipad);
         function validation(event){
             if(event.matches){
                // console.log('true');
